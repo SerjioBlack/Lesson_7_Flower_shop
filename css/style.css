@@ -45,11 +45,25 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url(../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 .wrapper {
+	font-family: "Roboto-Regular", sans-serif
 
 }
 
@@ -79,19 +93,17 @@ margin: 0 auto;
 	display: flex;
 	justify-content:space-between;
 	max-width: 1110px;
-margin: 0 auto;
-padding: 25px 0;
+    margin: 0 auto;
 }
 
 .header {
 background: #81A36B;
-height: 80px;
 line-height: 30px;
+padding: 25px 0;
 }
 
 h1 {
-	font-size: 62px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 62px;;
 	padding-bottom: 60px;
 }
 
@@ -133,9 +145,8 @@ height: 60px;
 .block2 {
 	max-width: 540px;
 	text-align: center;
-	margin: 120px 0;
-	margin-left: 285px;
-	text-align: center;
+	padding: 120px 0;
+	margin:0 auto
 }
 
 h2 {
@@ -146,7 +157,7 @@ h2 {
 
 .block3 {
 	background: #81A36B;
-	height: 282px;
+	padding: 80px 0;
 }
 
 .block5 {
@@ -162,9 +173,9 @@ h2 {
 }
 
 .block7 div {
-	width: 350px;
-	height: 510px;
+	flex: 1 1 30%;
 	background: #81A36B;
+	padding: 0 0 93px;
 }
 
 .block7 img {
@@ -174,9 +185,8 @@ h2 {
 
 .middle {
 	display: flex;
-	justify-content: space-around;
-	padding: 80px 80px 0;
-	font-weight: 900;
+	justify-content: space-between;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -185,8 +195,8 @@ h2 {
 }
 
 .block4 {
-	
 	display: flex;
+	flex: 1 1 30%;
 	justify-content: space-between;
 	gap: 30px;
 	padding: 120px 0;
@@ -199,12 +209,12 @@ h2 {
 	}
 
 	.block4-text {
-		width: 540px
+		width: 540px;
+		flex: 1 1 30%;
 	}
 
 footer {
 	background: #81A36B;
-	height: 390px;
 }
 
 .footer {
@@ -228,5 +238,6 @@ h3 {
 
 .footer-logo p {
 	text-align: center;
+	padding-bottom: 20px;
 }
 
